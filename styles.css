@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('./asset/design.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #191818;
+}
+
+.navbar {
+    width: 100%;
+    height: 6.0rem;
+    display: flex;
+    padding: 0 64px;
+    align-items: center;
+    justify-content: end;
+    gap: 15rem;
+
+}
+
+.links {
+    font-family: 'IBM Plex Mono', sans-serif;
+    border-radius: 3rem;
+    height: 3.5em;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background: linear-gradient(160deg, #212226, #4f50526b);
+    margin-top: 2rem;
+
+}
+
+.links ul li a {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: large;
+    color: white;
+    font-weight: 500;
+}
+
+.links ul li a:hover {
+    color: #9b9da7;
+    font-family: 'IBM Plex Mono', sans-serif;
+
+}
+
+.navbar .links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #9b9da7;
+
+}
+
+.button a {
+    margin-top: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    transition: background-color 0.8s ease, color 0.3s ease;
+}
+
+.button a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3rem;
+}
+
+.navbar .links,
+.navbar .button {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 42px;
+    width: 180px;
+}
+
+#checkbtn {
+    float: right;
+    margin-right: 1rem;
+    font-size: 30px;
+    color: #fff;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+.back-img {
+
+    background-color: #212226;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: #212226;
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    width: 60%;
+    margin-top: 2.5rem;
+    color: #9b9da7;
+}
+
+.hero-content h1,
+p,
+h2 {
+    background-color: inherit;
+
+}
+
+.hero-content h1 {
+    font-size: 62px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-icon {
+    background-color: inherit;
+}
+
+.hero-icon img {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.hero-icon img:hover {
+    box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.3);
+}
+
+.heading {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 48px;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+
+        0 0 60px rgb(138, 138, 138);
+
+}
+
+.snippet {
+    margin-left: 20px;
+    background: linear-gradient(90deg, #60f855, hsl(359, 97%, 51%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.info-para {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+    font-family: 'IBM Plex Mono', sans-serif;
+    max-width: 90%;
+    max-height: 60%;
+}
+
+.thin-text h2 {
+    font-weight: lighter;
+    font-style: italic;
+    color: aqua;
+    padding-top: 3rem;
+    margin-left: 1rem;
+    font-size: 1.1em;
+    line-height: 0.1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.jokes {
+    text-shadow: 0 0 30px rgb(255, 255, 255),
+        0 0 60px rgb(255, 255, 255);
+}
+
+.text-formal {
+    font-size: 1em;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.front-dev {
+    line-height: 1;
+    font-size: 62px;
+}
+
+.hero-icon img {
+    height: 180px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 10rem;
+    justify-content: center;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.collaborate {
+    display: flex;
+    color: #9b9da7;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10rem;
+    width: 90%;
+    gap: 10rem;
+}
+
+.collaborate img {
+    height: 5rem;
+    font-weight: 5rem;
+}
+
+.items ul {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.items ul i {
+    font-size: 2.0rem;
+    color: white;
+}
+
+.collab-moto {
+    width: 40%;
+    text-align: justify;
+}
+
+.para-info {
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.skills-grid {
+    margin: 15rem;
+    border-radius: 1rem;
+    height: 80%;
+    margin-top: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal columns */
+    grid-template-rows: repeat(3, 1fr);
+    /* 3 equal rows */
+    gap: 0.3rem;
+    /* Gap between grid items */
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+/* Positioning and spanning */
+.skill-1 {
+    grid-column: span 2;
+    /* Span across 2 columns */
+    grid-row: span 2;
+    /* Span across 2 rows */
+}
+
+.skill-2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    /* Span across 2 columns */
+}
+
+.skill-3,
+.skill-5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.skill-4 {
+    grid-column: span 2;
+    /* Span across 2 columns */
+    grid-row: span 2;
+    /* Span across 2 rows */
+}
+
+/* For all skill-item boxes */
+.skill-item {
+    background-color: #353639;
+    /* Example background color */
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+
+}
+
+.skill-sec {
+    color: white;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-left: 40%;
+    text-shadow: 0 0 60px rgb(138, 138, 138);
+}
+
+.skill-sec h2 {
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.skill-1,
+.skill-2,
+.skill-3,
+.skill-4,
+.skill-5,
+.skill-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'IBM Plex Mono', sans-serif;
+
+}
+
+.skill-1 img,
+.skill-2 img,
+.skill-3 img,
+.skill-4 img,
+.skill-5 img {
+    height: 50px;
+    padding: 10px;
+}
+
+.skill-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-2 img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.skill-4 img {
+    padding: 10px;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+}
+
+.skill-6 img {
+    height: 3rem;
+    width: 3rem;
+    justify-content: space-between;
+}
+
+.information {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    color: #9b9da7;
+    gap: 2rem;
+
+}
+
+.skill-icon{
+
+}
+
+.about-me h2 {
+    font-size: 4rem;
+    color: white;
+    margin-left: 40%;
+    margin-top: 5rem;
+    font-family: 'IBM Plex Mono', sans-serif;
+    text-shadow: 0 0 60px rgb(138, 138, 138);
+}
+
+.information img {
+    width: 40rem;
+    margin-left: 2rem;
+    box-shadow: 0 0 20px 3px rgba(2, 63, 71, 0.309);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.information p {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    line-height: 2rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.bold-text {
+    color: white;
+}
+
+.projects-grid {
+    margin: 15rem;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+
+}
+
+
+.project-1 {
+    grid-column: span 2;
+    grid-row: span 2.5;
+}
+
+.project-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.project-3 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.project-4 {
+    grid-column: span 2;
+    grid-row: span 2.5;
+}
+
+.project-item {
+    background-color: #353639;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+
+}
+
+.project-sec {
+    color: white;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-left: 40%;
+    text-shadow: 0 0 60px rgb(138, 138, 138);
+}
+
+.project-sec h2 {
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'IBM Plex Mono', sans-serif;
+
+}
+
+.project-1 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-2 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-3 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-4 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-1 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-3 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-4 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+.experience h2 {
+    color: white;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-left: 35%;
+    text-shadow: 0 0 60px rgb(138, 138, 138);
+}
+
+.container-exp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.exp-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 4rem;
+    width: 50%;
+    padding: 10px;
+    height: 20rem;
+    text-align: left;
+    color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    margin-right: 4px;
+    -webkit-backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.exp-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.exp-card h3 {
+    margin: 10px 0 0;
+    color: #fff;
+}
+
+.exp-content p {
+    color: #ddd;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.button-field {
+    margin-top: 2rem;
+}
+
+.button-field button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-field button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.exp-card:hover {
+    transform: translateY(-10px, -10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.resume {
+    margin-top: 1rem;
+    margin-left: 20%;
+}
+
+.resume button {
+    background-color: #353639;
+    color: white;
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    border-style: none;
+    border: 1px solid #9b9da7;
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background-image: url('./asset/line-art.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #191818;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #29292A;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.from-img {
+    width: 100px;
+}
+
+.form-content {
+    width: 600px;
+    margin-left: 5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 6px rgba(98, 0, 234, 0.2);
+    outline: none;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #29292A;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #9b9da7;
+}
+
+.contact-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img img {
+    height: 15rem;
+    width: 15rem;
+    margin-left: 9rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    main {}
+
+    .navbar {
+        display: none;
+    }
+
+    .hero-content {
+        width: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-icon img {
+        height: 100px;
+        width: 110px;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .thin-text h2 {
+        line-height: 1.5rem;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .collaborate,
+    .contact-section {
+        flex-direction: column;
+        margin: 0.8rem auto;
+        margin-top: 4rem;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        margin: 0.8 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me h2 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        margin: 0.8rem auto;
+    }
+
+    .information img {
+        height: 20%;
+        width: 90%;
+    }
+
+    .information p {
+        text-align: justify;
+    }
+
+    .collab-moto {
+        text-align: justify;
+        width: 70%;
+    }
+
+    .skill-sec {
+        margin: 0.8rem auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-sec h2 {
+        margin-left: 34%;
+        font-size: 2rem;
+    }
+
+    .experience {
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .experience h2 {
+        margin-left: 15%;
+        font-size: 2rem;
+    }
+
+    .container-exp {
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem auto;
+        margin-top: 4rem;
+    }
+
+    .exp-card {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .button-field {
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    .info-para {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+    .resume {
+        margin: 1rem auto;
+    }
+
+    .project-sec {
+        margin-left: 30%;
+    }
+
+    .project-sec h2 {
+        font-size: 2rem;
+
+    }
+
+    .projects-grid {
+        margin: 1rem auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+    .skill-1{
+        justify-content: center;
+    }
+    .skill-icon{
+        margin-top: 2rem;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .contact-img img {
+        margin: 1rem auto;
+        height: 90%;
+        width: 50%;
+    }
+
+    .form-content {
+        margin: 1rem auto;
+        width: 80%;
+
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+}
