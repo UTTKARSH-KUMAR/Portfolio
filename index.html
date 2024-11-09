@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
 
         <div class="links" aria-label="Main Navigation">
 
@@ -36,10 +36,22 @@
             </ul>
         </div>
         <div class="button">
-            <a href="#contact">CONTACT ME</a>
+            <a href="#contact" id="contact-me">CONTACT ME</a>
             <input type="checkbox" id="check" name="" value="">
             <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
         </div>
+
+    </nav> -->
+    <nav>
+        <input type="checkbox" id="check" name="" value="">
+        <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+        <a class="logo" href="#contact" id="contact-me">Connect <i class="fa-solid fa-plug"></i></a>
+        <ul onclick="toggleCheckbox()">
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+        </ul>
 
     </nav>
     <main>
@@ -164,14 +176,15 @@
                     </div>
                     <div class="exp-content">
                         <p>• Implementing protocols such as FTP to seamlessly synchronize
-                        real-time updates with clients’ websites.
-                        <br>
-                        • Utilized SMTP to deliver seamless and efficient functionality to
-                        users.
-                        <br>
-                        • Executing front-end development tasks, including crafting CSS
-                        files in accordance with Figma designs and seamlessly integrating
-                        JavaScript for enhanced functionality.</p>
+                            real-time updates with clients’ websites.
+                            <br>
+                            • Utilized SMTP to deliver seamless and efficient functionality to
+                            users.
+                            <br>
+                            • Executing front-end development tasks, including crafting CSS
+                            files in accordance with Figma designs and seamlessly integrating
+                            JavaScript for enhanced functionality.
+                        </p>
                     </div>
                     <div class="button-field">
                         <button>DAO</button>
@@ -182,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <a class="resume" href="./asset/Uttkarsh_kumar.pdf" target="_blank">
+            <a class="resume" href="./asset/Uttkarsh_.pdf" target="_blank">
                 <button>EXPLORE MY RESUME -></button>
             </a>
         </div>
