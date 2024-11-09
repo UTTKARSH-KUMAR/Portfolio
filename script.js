@@ -28,6 +28,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+function toggleCheckbox() {
+    const checkbox = document.getElementById("check");
+    checkbox.checked = !checkbox.checked;
+}
 const btn = document.getElementById('button');
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
